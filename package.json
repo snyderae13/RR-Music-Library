@@ -6,9 +6,15 @@
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+<<<<<<< HEAD
     "react-router-dom": "^6.2.1",
+=======
+    "react-router-dom": "^5.2.0",
+>>>>>>> 49db37a341a5481d5072a64e51ed3575d2eabbbd
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.1"
   },
