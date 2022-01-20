@@ -10,11 +10,7 @@
     "cors": "^2.8.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-<<<<<<< HEAD
     "react-router-dom": "^6.2.1",
-=======
-    "react-router-dom": "^5.2.0",
->>>>>>> 49db37a341a5481d5072a64e51ed3575d2eabbbd
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.1"
   },
