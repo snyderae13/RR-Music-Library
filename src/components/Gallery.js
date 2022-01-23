@@ -1,5 +1,6 @@
 import GalleryItem from './GalleryItem'
 
+
 const Gallery = (props) => {
     const myData = props.data.result.read()
 

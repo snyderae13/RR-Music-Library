@@ -28,7 +28,6 @@ const wrapPromise = async (promise) => {
     }
 }
 
-
 export const createResource = (searchTerm) => {
     return {
         result: wrapPromise(fetchSearch(searchTerm))

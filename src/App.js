@@ -10,6 +10,7 @@ function App() {
   let [searchTerm, setSearchTerm] = useState('')
   let [data, setData] = useState(null)
   let [message, setMessage] = useState('Search for Music!')
+  let [data, setData] = useState(null)
 
   useEffect(() => {
     if (searchTerm) {
