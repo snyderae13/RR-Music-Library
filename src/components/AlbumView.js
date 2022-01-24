@@ -1,24 +1,26 @@
 // These components will be making separate API calls from the app
 // component to serve specific data about a given album
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useContext } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
+import { DataContext } from '../context/DataContext'
 
 
 const AlbumView = () => {
     const { id } = useParams()
     const [albumData, setAlbumData] = useState([])
     const navigate = useNavigate()
+    const data = useContext(DataContext)
 
 
     useEffect(() => {
+        const API_URL = `https://itunes.apple.com/lookup?id=${id}&entity=song`;
+        
         const fetchData = async () => {
-            const API_URL = `http://localhost:4000/song/${id}`
-            const response = await fetch(API_URL)
-            const resData = await response.json()
-            setAlbumData(resData.results)
-            console.log(albumData)
+            const response = await fetch(API_URL);
+            const resData = await response.json();
+            setAlbumData(resData.results);
         }
-        fetchData()
+        fetchData();
     }, [id])
 
     const justSongs = albumData.filter(entry => entry.kind === 'song')
